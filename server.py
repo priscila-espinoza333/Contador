@@ -11,10 +11,14 @@ def index():
         session['count'] += 1 # si esxiste utilizamos eel codigo
     else:
         session['count'] = 0 # sino existe la pdebemos inicialir en 1
-
-
     
     return render_template('index.html')
+
+@app.route('/destroy_session')
+def destroy_session():
+    session.clear()
+    return redirect('/')
+    
 
 
 
