@@ -5,14 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contadador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
 </head>
 <body>
     <h>Counter</h>
     <div class="counting">
         <h3>{{session['count']}}</h3> <!--aqui estoy realizando el conteo-->
-        <button class="btn"><a href="/">Click</a></button>  <!-- aqui estoy dando funcionalidad al boton click para que sume cada vez que lo apreto-->
-        <button class="btn"><a href="/destroy_session">Reset</a></button>
+        <button class="btn btn-success"><a href="/">Click</a></button>  <!-- aqui estoy dando funcionalidad al boton click para que sume cada vez que lo apreto-->
+        <button class="btn btn-warning"><a href="/destroy_session">Reset</a></button>
+        
+    </div>
+    <div>
+        <button class="btn btn-info"><a href="incremento2">x2</a></button>
+        <button class="btn btn-dark"><a href="reiniciar">reiniciar</a></button>
+
     </div>
 </body>
 </html>
